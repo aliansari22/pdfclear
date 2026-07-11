@@ -37,7 +37,7 @@
     "tsx": "^4.20.5"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
+    "@types/node": "^26.1.1",
     "autoprefixer": "^10.4.21",
     "baseline-browser-mapping": "^2.9.19",
     "esbuild": "^0.25.11",
