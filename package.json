@@ -33,7 +33,7 @@
     "react-dom": "^19.1.1",
     "react-helmet-async": "^3.0.0",
     "react-router-dom": "^7.8.2",
-    "tesseract.js": "^6.0.1",
+    "tesseract.js": "^7.0.0",
     "tsx": "^4.20.5"
   },
   "devDependencies": {
