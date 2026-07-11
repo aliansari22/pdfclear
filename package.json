@@ -1,0 +1,85 @@
+{
+  "name": "pdfclear",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 4000",
+    "dev:force": "vite --force --port 4000",
+    "build": "vite build",
+    "build:site": "vite build && npm run generate:seo",
+    "preview": "vite preview",
+    "check": "npm run typecheck && npm run build",
+    "clean": "node scripts/clean.mjs",
+    "generate:og": "tsx scripts/generate-og.ts",
+    "generate:seo": "tsx scripts/generate-seo.ts",
+    "browser:install": "npx @puppeteer/browsers install chrome@stable",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@huggingface/transformers": "^3.7.6",
+    "@jspawn/qpdf-wasm": "^0.0.2",
+    "arabic-persian-reshaper": "^1.0.1",
+    "dompurify": "^3.4.11",
+    "html2pdf.js": "^0.14.0",
+    "idb-keyval": "^6.2.1",
+    "jspdf": "^4.2.1",
+    "jszip": "^3.10.1",
+    "marked": "^16.2.1",
+    "path-browserify": "^1.0.1",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^5.4.149",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-helmet-async": "^3.0.0",
+    "react-router-dom": "^7.8.2",
+    "tesseract.js": "^6.0.1",
+    "tsx": "^4.20.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "autoprefixer": "^10.4.21",
+    "baseline-browser-mapping": "^2.9.19",
+    "esbuild": "^0.25.11",
+    "postcss": "^8.5.6",
+    "puppeteer-core": "^24.19.0",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  },
+  "description": "Open-source, privacy-first PDF toolkit with browser-side editing, conversion, OCR, summarization, and semantic search.",
+  "license": "Apache-2.0",
+  "homepage": "https://www.pdfclear.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliansari22/pdfclear.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aliansari22/pdfclear/issues"
+  },
+  "keywords": [
+    "pdf",
+    "pdf-tools",
+    "pdf-editor",
+    "pdf-converter",
+    "browser",
+    "privacy",
+    "local-first",
+    "webassembly",
+    "react",
+    "typescript",
+    "vite",
+    "ocr",
+    "tesseract",
+    "transformers-js",
+    "semantic-search",
+    "pdf-summarizer",
+    "self-hosted",
+    "docker",
+    "open-source"
+  ],
+  "private": false,
+  "engines": {
+    "node": ">=20"
+  }
+}

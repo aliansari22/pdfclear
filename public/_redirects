@@ -1,0 +1,54 @@
+# Redirect old/legacy tool URLs to current canonical URLs
+/merge-pdf-files                         /merge-pdf/                              301
+/merge-pdf-files/                        /merge-pdf/                              301
+/split-pdf-files                         /split-pdf/                              301
+/split-pdf-files/                        /split-pdf/                              301
+/compress-pdf-files                      /compress-pdf/                           301
+/compress-pdf-files/                     /compress-pdf/                           301
+/rotate-pdf-pages                        /rotate-pdf/                             301
+/rotate-pdf-pages/                       /rotate-pdf/                             301
+
+# Normalize slashless canonical routes
+/about                                   /about/                                  301
+/contact                                 /contact/                                301
+/why-us                                  /why-us/                                 301
+/privacy                                 /privacy/                                301
+/pdf-semantic-search                     /pdf-semantic-search/                    301
+/ai-pdf-summarizer                       /ai-pdf-summarizer/                      301
+/pdf-to-markdown                         /pdf-to-markdown/                        301
+/smart-pdf-to-txt                        /smart-pdf-to-txt/                       301
+/pdf-to-jpg                              /pdf-to-jpg/                             301
+/pdf-to-png                              /pdf-to-png/                             301
+/jpg-to-pdf                              /jpg-to-pdf/                             301
+/png-to-pdf                              /png-to-pdf/                             301
+/txt-to-pdf                              /txt-to-pdf/                             301
+/html-to-pdf                             /html-to-pdf/                            301
+/markdown-to-pdf                         /markdown-to-pdf/                        301
+/add-text-to-pdf                         /add-text-to-pdf/                        301
+/add-image-to-pdf                        /add-image-to-pdf/                       301
+/sign-pdf                                /sign-pdf/                               301
+/fill-pdf-form                           /fill-pdf-form/                          301
+/add-page-numbers                        /add-page-numbers/                       301
+/watermark-pdf                           /watermark-pdf/                          301
+/edit-pdf-metadata                       /edit-pdf-metadata/                      301
+/merge-pdf                               /merge-pdf/                              301
+/split-pdf                               /split-pdf/                              301
+/rotate-pdf                              /rotate-pdf/                             301
+/delete-pdf-pages                        /delete-pdf-pages/                       301
+/compress-pdf                            /compress-pdf/                           301
+/protect-pdf                             /protect-pdf/                            301
+/unlock-pdf                              /unlock-pdf/                             301
+/reorder-pdf-pages                       /reorder-pdf-pages/                      301
+/flip-pdf-pages                          /flip-pdf-pages/                         301
+
+# Redirect /home to the real homepage
+/home                                    /                                        301
+/home/                                   /                                        301
+
+# Force all .netlify.app traffic → www
+https://pdfclear.netlify.app/*           https://www.pdfclear.com/:splat          301!
+
+# Force bare domain → www
+https://pdfclear.com/*                   https://www.pdfclear.com/:splat          301!
+
+

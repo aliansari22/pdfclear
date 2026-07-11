@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and community support
+    url: https://github.com/aliansari22/pdfclear/discussions
+    about: Ask setup, self-hosting, and usage questions in GitHub Discussions.
+  - name: Security reports
+    url: https://github.com/aliansari22/pdfclear/security/advisories/new
+    about: Report vulnerabilities privately. Do not open a public security issue.

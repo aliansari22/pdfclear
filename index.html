@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      try {
+        var savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch (e) {}
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4f46e5" />
+    <meta
+      name="description"
+      content="Open-source, privacy-first PDF tools with browser-side editing, conversion, OCR, summarization, and semantic search."
+    />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PDFClear" />
+    <meta property="og:title" content="PDFClear — Private PDF Tools in Your Browser" />
+    <meta
+      property="og:description"
+      content="Edit, convert, OCR, summarize, and search PDFs directly in your browser. Your files stay on your device."
+    />
+    <meta property="og:image" content="/assets/og/pdfclear-social-preview.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/assets/og/pdfclear-social-preview.png" />
+
+    <title>PDFClear — Private PDF Tools in Your Browser</title>
+  </head>
+  <body class="bg-light-body dark:bg-dark-body">
+    <div id="root"></div>
+    <div id="modal-root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

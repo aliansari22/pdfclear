@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+  <title id="title">PDFClear browser dashboard preview</title>
+  <desc id="desc">A stylized preview of PDFClear showing PDF tools, local processing, OCR, and semantic search.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef2ff"/>
+      <stop offset="0.55" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#fff7ed"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4f46e5"/>
+      <stop offset="0.55" stop-color="#c026d3"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#1e293b" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1440" height="810" fill="url(#bg)"/>
+  <circle cx="132" cy="104" r="190" fill="#818cf8" opacity="0.14"/>
+  <circle cx="1326" cy="706" r="250" fill="#fb7185" opacity="0.12"/>
+  <rect x="70" y="52" width="1300" height="706" rx="32" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="70" y="52" width="1300" height="76" rx="32" fill="#111827"/>
+  <rect x="70" y="96" width="1300" height="32" fill="#111827"/>
+  <circle cx="112" cy="90" r="9" fill="#fb7185"/>
+  <circle cx="142" cy="90" r="9" fill="#fbbf24"/>
+  <circle cx="172" cy="90" r="9" fill="#34d399"/>
+  <rect x="520" y="72" width="400" height="36" rx="18" fill="#1f2937"/>
+  <text x="720" y="96" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#d1d5db">pdfclear.com</text>
+
+  <rect x="70" y="128" width="250" height="630" fill="#f8fafc"/>
+  <text x="110" y="184" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#312e81">PDFClear</text>
+  <text x="110" y="216" font-family="Arial, sans-serif" font-size="14" fill="#64748b">Private browser PDF tools</text>
+
+  <rect x="94" y="252" width="202" height="52" rx="14" fill="#eef2ff"/>
+  <circle cx="122" cy="278" r="11" fill="#4f46e5"/>
+  <text x="146" y="284" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#3730a3">All tools</text>
+  <g font-family="Arial, sans-serif" font-size="15" fill="#475569">
+    <text x="112" y="344">Organize PDF</text>
+    <text x="112" y="392">Edit &amp; annotate</text>
+    <text x="112" y="440">Convert files</text>
+    <text x="112" y="488">OCR &amp; extraction</text>
+    <text x="112" y="536">Local AI tools</text>
+    <text x="112" y="584">Protect &amp; unlock</text>
+  </g>
+  <rect x="94" y="630" width="202" height="86" rx="16" fill="#ecfdf5" stroke="#a7f3d0"/>
+  <text x="112" y="660" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#047857">LOCAL PROCESSING</text>
+  <text x="112" y="684" font-family="Arial, sans-serif" font-size="13" fill="#065f46">Documents stay in</text>
+  <text x="112" y="703" font-family="Arial, sans-serif" font-size="13" fill="#065f46">your browser</text>
+
+  <text x="370" y="188" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#0f172a">Your PDFs stay yours.</text>
+  <text x="370" y="225" font-family="Arial, sans-serif" font-size="18" fill="#64748b">Edit, convert, OCR, summarize, and search without a document-processing server.</text>
+  <rect x="370" y="254" width="600" height="52" rx="16" fill="#f8fafc" stroke="#cbd5e1"/>
+  <circle cx="399" cy="280" r="9" fill="none" stroke="#6366f1" stroke-width="3"/>
+  <line x1="406" y1="287" x2="414" y2="295" stroke="#6366f1" stroke-width="3" stroke-linecap="round"/>
+  <text x="430" y="287" font-family="Arial, sans-serif" font-size="16" fill="#94a3b8">Search tools: merge, OCR, semantic search…</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="370" y="342" width="288" height="144" rx="20" fill="#f5f3ff" stroke="#ddd6fe"/>
+    <rect x="394" y="366" width="46" height="46" rx="13" fill="#ede9fe"/>
+    <text x="417" y="396" text-anchor="middle" font-size="25" fill="#7c3aed">⇄</text>
+    <text x="394" y="438" font-size="18" font-weight="700" fill="#312e81">Merge &amp; organize</text>
+    <text x="394" y="462" font-size="14" fill="#6d28d9">Combine, split, rotate, reorder</text>
+
+    <rect x="680" y="342" width="288" height="144" rx="20" fill="#fff7ed" stroke="#fed7aa"/>
+    <rect x="704" y="366" width="46" height="46" rx="13" fill="#ffedd5"/>
+    <text x="727" y="397" text-anchor="middle" font-size="23" fill="#ea580c">Aa</text>
+    <text x="704" y="438" font-size="18" font-weight="700" fill="#9a3412">Edit &amp; convert</text>
+    <text x="704" y="462" font-size="14" fill="#c2410c">Text, images, signatures, formats</text>
+
+    <rect x="990" y="342" width="288" height="144" rx="20" fill="#ecfeff" stroke="#a5f3fc"/>
+    <rect x="1014" y="366" width="46" height="46" rx="13" fill="#cffafe"/>
+    <text x="1037" y="397" text-anchor="middle" font-size="24" fill="#0891b2">⌕</text>
+    <text x="1014" y="438" font-size="18" font-weight="700" fill="#155e75">OCR extraction</text>
+    <text x="1014" y="462" font-size="14" fill="#0e7490">Read scanned PDFs and images</text>
+
+    <rect x="370" y="512" width="598" height="194" rx="22" fill="#111827"/>
+    <text x="402" y="550" font-size="13" font-weight="700" letter-spacing="1.5" fill="#a5b4fc">SEMANTIC PDF SEARCH</text>
+    <text x="402" y="588" font-size="25" font-weight="700" fill="#ffffff">“What are the key contract risks?”</text>
+    <rect x="402" y="612" width="530" height="62" rx="14" fill="#1f2937"/>
+    <text x="424" y="639" font-size="14" fill="#cbd5e1">The termination clause requires 60 days’ notice and includes…</text>
+    <text x="424" y="661" font-size="13" fill="#818cf8">Page 12 · 92% relevance</text>
+
+    <rect x="990" y="512" width="288" height="194" rx="22" fill="#f0fdf4" stroke="#bbf7d0"/>
+    <text x="1018" y="551" font-size="13" font-weight="700" letter-spacing="1.2" fill="#047857">PRIVACY MODEL</text>
+    <circle cx="1033" cy="592" r="11" fill="#10b981"/>
+    <text x="1056" y="598" font-size="15" font-weight="700" fill="#065f46">No document API</text>
+    <circle cx="1033" cy="633" r="11" fill="#6366f1"/>
+    <text x="1056" y="639" font-size="15" font-weight="700" fill="#3730a3">Self-hostable</text>
+    <circle cx="1033" cy="674" r="11" fill="#f59e0b"/>
+    <text x="1056" y="680" font-size="15" font-weight="700" fill="#92400e">Open source</text>
+  </g>
+
+  <rect x="370" y="728" width="908" height="5" rx="2.5" fill="url(#brand)"/>
+</svg>

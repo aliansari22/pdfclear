@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+.vite/
+.cache/
+coverage/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Generated/internal source bundles
+pages/bundle.txt
+**/bundle.txt
+
+# Generated SEO/OG outputs that may be regenerated locally
+public/og/
+
+
+# Font binaries are not included in the source package. Host custom fonts
+# separately or add them intentionally through Git LFS/release assets.
+public/assets/fonts/
+*.ttf
+*.otf
+*.woff
+*.woff2
+
+# Large local AI/OCR/model assets. Keep these out of Git by default.
+public/models/
+public/.cache/
+public/onnx/
+public/tessdata/
+public/tesseract/
+public/assets/models/
+*.onnx
+*.safetensors
+*.bin
+*.gguf
+*.tflite
+
+# Temporary files
+*.tmp
+*.temp

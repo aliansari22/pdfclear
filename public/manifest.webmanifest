@@ -1,0 +1,10 @@
+{
+  "name": "PDFClear",
+  "short_name": "PDFClear",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#2563eb",
+  "description": "Open-source, privacy-first PDF tools with browser-side editing, conversion, OCR, summarization, and semantic search.",
+  "icons": []
+}

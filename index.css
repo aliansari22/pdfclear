@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global canvas: layered color, not one flat teal wash. */
+body {
+  @apply bg-light-body text-text-light-primary antialiased;
+  background-image:
+    radial-gradient(circle at 0% 0%, rgba(79, 70, 229, 0.12), transparent 30rem),
+    radial-gradient(circle at 82% 2%, rgba(219, 39, 119, 0.10), transparent 26rem),
+    radial-gradient(circle at 50% 100%, rgba(245, 158, 11, 0.08), transparent 30rem);
+}
+
+.dark body {
+  @apply bg-dark-body text-text-dark-primary;
+  background-image:
+    radial-gradient(circle at 0% 0%, rgba(99, 102, 241, 0.18), transparent 34rem),
+    radial-gradient(circle at 86% 4%, rgba(236, 72, 153, 0.12), transparent 30rem),
+    radial-gradient(circle at 50% 100%, rgba(14, 165, 233, 0.10), transparent 34rem);
+}
+
+/* Reusable input-style for form elements to maintain consistency */
+.input-style {
+  @apply block w-full rounded-xl border px-3 py-2 shadow-sm
+         focus:outline-none focus:ring-2 focus:ring-indigo-500/60 focus:border-indigo-500
+         bg-white border-slate-200 text-text-light-primary
+         dark:bg-dark-card dark:border-border-dark dark:text-text-dark-primary
+         disabled:bg-gray-100 dark:disabled:bg-gray-700 disabled:text-gray-500 dark:disabled:text-gray-400;
+}
+
+/* Primary actions now use a vivid product gradient instead of flat teal. */
+.btn-primary {
+  @apply bg-gradient-to-r from-indigo-600 via-fuchsia-600 to-rose-500 hover:from-indigo-700 hover:via-fuchsia-700 hover:to-rose-600
+         text-white font-bold py-2 px-4 rounded-xl shadow-md shadow-indigo-900/15 transition-all
+         hover:-translate-y-0.5 hover:shadow-lg hover:shadow-fuchsia-900/20
+         focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fuchsia-500
+         disabled:from-gray-400 disabled:via-gray-400 disabled:to-gray-400 dark:disabled:from-gray-600 dark:disabled:via-gray-600 dark:disabled:to-gray-600 disabled:cursor-not-allowed disabled:hover:translate-y-0;
+}
+
+/* Secondary actions/tools: neutral shell with a subtle colored hover. */
+.btn-secondary {
+  @apply px-3 py-1.5 text-sm font-semibold rounded-xl border border-slate-200
+         bg-white text-text-light-primary hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-700
+         dark:border-border-dark dark:bg-dark-card dark:text-text-dark-primary dark:hover:bg-indigo-950/40 dark:hover:text-indigo-300 transition-colors
+         disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+/* Tool page feature card styling */
+.feature-card {
+  @apply p-4 rounded-2xl border border-border-light bg-light-card shadow-soft
+         dark:border-border-dark dark:bg-dark-card;
+}
+.feature-card h3 {
+  @apply font-semibold mb-1 text-text-light-primary dark:text-text-dark-primary;
+}
+.feature-card p {
+  @apply text-sm text-text-light-secondary dark:text-text-dark-secondary;
+}
+
+/* Alternating color treatment for small feature grids throughout tool pages. */
+.feature-card:nth-child(4n + 1) {
+  @apply border-indigo-100 bg-gradient-to-br from-white to-indigo-50/60 dark:border-indigo-900/60 dark:from-dark-card dark:to-indigo-950/20;
+}
+.feature-card:nth-child(4n + 2) {
+  @apply border-rose-100 bg-gradient-to-br from-white to-rose-50/60 dark:border-rose-900/60 dark:from-dark-card dark:to-rose-950/20;
+}
+.feature-card:nth-child(4n + 3) {
+  @apply border-sky-100 bg-gradient-to-br from-white to-sky-50/60 dark:border-sky-900/60 dark:from-dark-card dark:to-sky-950/20;
+}
+.feature-card:nth-child(4n) {
+  @apply border-amber-100 bg-gradient-to-br from-white to-amber-50/60 dark:border-amber-900/60 dark:from-dark-card dark:to-amber-950/20;
+}
+.feature-card:nth-child(4n + 1) svg { color: #4f46e5; }
+.feature-card:nth-child(4n + 2) svg { color: #db2777; }
+.feature-card:nth-child(4n + 3) svg { color: #0284c7; }
+.feature-card:nth-child(4n) svg { color: #d97706; }
+.dark .feature-card:nth-child(4n + 1) svg { color: #a5b4fc; }
+.dark .feature-card:nth-child(4n + 2) svg { color: #f9a8d4; }
+.dark .feature-card:nth-child(4n + 3) svg { color: #7dd3fc; }
+.dark .feature-card:nth-child(4n) svg { color: #fcd34d; }
+
+/* FAQ section styling */
+.faq-details {
+  @apply mb-3 p-4 rounded-xl bg-light-card border border-border-light shadow-sm
+         dark:bg-dark-card dark:border-border-dark;
+}
+.faq-details:nth-of-type(4n + 1) { @apply border-l-4 border-l-indigo-400; }
+.faq-details:nth-of-type(4n + 2) { @apply border-l-4 border-l-rose-400; }
+.faq-details:nth-of-type(4n + 3) { @apply border-l-4 border-l-sky-400; }
+.faq-details:nth-of-type(4n) { @apply border-l-4 border-l-amber-400; }
+.faq-summary {
+  @apply cursor-pointer font-medium text-text-light-primary dark:text-text-dark-primary;
+}
+.faq-answer {
+  @apply mt-2 text-text-light-secondary dark:text-text-dark-secondary text-sm;
+}
+
+/* Native controls */
+input[type="range"] {
+  accent-color: #4f46e5;
+}
+input[type="checkbox"], input[type="radio"] {
+  accent-color: #db2777;
+}
+
+@layer utilities {
+  .bullet-tight {
+    list-style-position: outside;
+    padding-left: 1.0rem;
+  }
+
+  .bullet-tight li {
+    text-indent: -0.25rem;
+  }
+}
+
+@layer utilities {
+  .bullet-tight-2 {
+    list-style-position: outside;
+    padding-left: 2.0rem;
+  }
+
+  .bullet-tight-2 li {
+    text-indent: 0.0rem;
+  }
+}
+
+.lively-panel {
+  @apply rounded-2xl border border-white/70 bg-white/85 shadow-soft backdrop-blur dark:border-border-dark dark:bg-dark-card/80;
+}
+
+.visual-chip {
+  @apply inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/75 px-3 py-1.5 text-xs font-semibold shadow-sm backdrop-blur dark:border-border-dark dark:bg-dark-card/75;
+}
+
+.progress-gradient {
+  @apply bg-gradient-to-r from-indigo-600 via-fuchsia-600 to-amber-500;
+}

@@ -1,0 +1,5 @@
+{
+  "name": "PDFClear",
+  "description": "Open-source, privacy-first PDF tools with browser-side editing, conversion, OCR, summarization, and semantic search.",
+  "requestFramePermissions": []
+}
