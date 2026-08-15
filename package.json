@@ -20,7 +20,7 @@
     "@huggingface/transformers": "^3.7.6",
     "@jspawn/qpdf-wasm": "^0.0.2",
     "arabic-persian-reshaper": "^1.0.1",
-    "dompurify": "^3.4.11",
+    "dompurify": "^3.4.12",
     "html2pdf.js": "^0.14.0",
     "idb-keyval": "^6.2.1",
     "jspdf": "^4.2.1",
