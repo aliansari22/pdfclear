@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "@huggingface/transformers": "^3.7.6",
+    "@huggingface/transformers": "^4.2.0",
     "@jspawn/qpdf-wasm": "^0.0.2",
     "arabic-persian-reshaper": "^1.0.1",
     "dompurify": "^3.4.12",
